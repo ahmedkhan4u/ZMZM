@@ -52,7 +52,7 @@ public class SplashActivity extends AppCompatActivity {
         user_id = OneSignal.getDeviceState().getUserId();
 
 
-        grantLocationPermission();
+        //grantLocationPermission();
 
         progressBar = findViewById(R.id.spinKitView);
 
@@ -60,6 +60,7 @@ public class SplashActivity extends AppCompatActivity {
 
         progressBar.setIndeterminateDrawable(db);
 
+        countDownTimer();
 
     }
 
