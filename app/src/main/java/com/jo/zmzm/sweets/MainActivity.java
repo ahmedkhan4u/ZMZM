@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
 
             // \n is for new line
-            Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
         } else {
             // Can't get location.
             // GPS or network is not enabled.
@@ -237,7 +237,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
             }
         }else {
-            Toast.makeText(MainActivity.this, "Location" , Toast.LENGTH_SHORT).show();
+            //Toast.makeText(MainActivity.this, "Location" , Toast.LENGTH_SHORT).show();
 
 
             mWebView.evaluateJavascript("javascript: document.getElementById('geo').textContent='"+latitude+", "+longitude+"';",null);
@@ -256,7 +256,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     if (ContextCompat.checkSelfPermission(MainActivity.this,
                             Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-                        Toast.makeText(this, "Permission Granted", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(this, "Permission Granted", Toast.LENGTH_SHORT).show();
                         gps = new GPSTracker(MainActivity.this);
                         if(gps.canGetLocation()) {
 
@@ -271,7 +271,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                     }
                 } else {
-                    Toast.makeText(this, "Permission Denied", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, "Permission Denied", Toast.LENGTH_SHORT).show();
                 }
                 return;
             }
