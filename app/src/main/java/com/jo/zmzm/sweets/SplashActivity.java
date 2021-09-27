@@ -61,7 +61,7 @@ public class SplashActivity extends AppCompatActivity {
         progressBar.setIndeterminateDrawable(db);
 
         countDownTimer();
-
+//..
     }
 
     private void grantLocationPermission() {
