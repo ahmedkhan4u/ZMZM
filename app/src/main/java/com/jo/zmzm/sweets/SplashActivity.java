@@ -18,6 +18,7 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.Log;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -29,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
     private static final String ONESIGNAL_APP_ID = "9a5b658c-0182-432d-931e-4fb2a8b2e03a";
     boolean checkGpsOnResume = false;
     private ProgressBar progressBar;
-    String user_id;
+    String user_id = "";
     public static String urlString;
 
     public static final String TAG = SplashActivity.class.getSimpleName();
@@ -39,7 +40,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //OneSignal
