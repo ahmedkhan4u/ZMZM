@@ -1,4 +1,4 @@
-package com.jo.zmzm.sweets;
+package com.app.zmzm;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -7,7 +7,6 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 
 import androidx.core.app.ActivityCompat;
 
